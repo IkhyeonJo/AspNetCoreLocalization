@@ -4,7 +4,6 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    [MiddlewareFilter(typeof(LocalizationPipeline))]
     public class HomeController : BaseController
     { 
         public IActionResult Index()

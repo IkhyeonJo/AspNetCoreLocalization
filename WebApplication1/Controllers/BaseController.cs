@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers
 {
+    [MiddlewareFilter(typeof(LocalizationPipeline))]
     public abstract class BaseController : Controller
     {
         private string _currentLanguage;
